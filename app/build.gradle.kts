@@ -5,7 +5,7 @@ plugins {
 
 android {
     namespace = "vn.edu.tdc.doandidong"
-    compileSdk = 34
+    compileSdk = 35
 
     defaultConfig {
         applicationId = "vn.edu.tdc.doandidong"

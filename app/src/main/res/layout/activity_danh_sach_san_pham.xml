@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DanhSachSanPham_Activity">
+
+    <TextView
+        android:id="@+id/tvDanhSachSP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:text="Danh Sách Sản Phẩm"
+        android:textColor="#FF9800"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:layout_width="412dp"
+        android:layout_height="762dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvDanhSachSP"
+        app:layout_constraintVertical_bias="0.542"
+        tools:layout_editor_absoluteX="-2dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Sản phẩm thứ 1 -->
+            <LinearLayout
+                android:id="@+id/linearLayout1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:background="@color/Gray"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imgv1"
+                    android:layout_width="162dp"
+                    android:layout_height="104dp"
+                    app:srcCompat="@drawable/caphe" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="53dp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvTenSanPham1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Capuchino"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tvGiaSanPham1"
+                        android:layout_width="64dp"
+                        android:layout_height="wrap_content"
+                        android:text="2$" />
+                </LinearLayout>
+            </LinearLayout>
+            <!-- sản phẩm thứ 2 -->
+            <LinearLayout
+                android:id="@+id/linearLayout2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="24dp"
+                android:background="@color/Gray"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imgv2"
+                    android:layout_width="162dp"
+                    android:layout_height="104dp"
+                    app:srcCompat="@drawable/affogato" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="53dp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvTenSanPham2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Affogato"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tvGiaSanPham2"
+                        android:layout_width="64dp"
+                        android:layout_height="wrap_content"
+                        android:text="2.33$" />
+                </LinearLayout>
+            </LinearLayout>
+            <!-- sản phẩm thứ 3 -->
+            <LinearLayout
+                android:id="@+id/linearLayout3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="24dp"
+                android:background="@color/Gray"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imgv3"
+                    android:layout_width="162dp"
+                    android:layout_height="104dp"
+                    app:srcCompat="@drawable/americano" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="53dp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvTenSanPham3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Americano"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tvGiaSanPham3"
+                        android:layout_width="64dp"
+                        android:layout_height="wrap_content"
+                        android:text="2.33$" />
+                </LinearLayout>
+            </LinearLayout>
+            <!-- sản phẩm thứ 4 -->
+            <LinearLayout
+                android:id="@+id/linearLayout4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="24dp"
+                android:background="@color/Gray"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imgv4"
+                    android:layout_width="162dp"
+                    android:layout_height="104dp"
+                    app:srcCompat="@drawable/turk" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="53dp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvTenSanPham4"
+                        android:layout_width="65dp"
+                        android:layout_height="wrap_content"
+                        android:text="Turk"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tvGiaSanPham4"
+                        android:layout_width="64dp"
+                        android:layout_height="wrap_content"
+                        android:text="2.33$" />
+                </LinearLayout>
+            </LinearLayout>
+            <!-- sản phẩm thứ 5 -->
+            <LinearLayout
+                android:id="@+id/linearLayout5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="24dp"
+                android:background="@color/Gray"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imgv5"
+                    android:layout_width="162dp"
+                    android:layout_height="104dp"
+                    app:srcCompat="@drawable/espersso" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="53dp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvTenSanPham5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Espersso"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tvGiaSanPham5"
+                        android:layout_width="64dp"
+                        android:layout_height="wrap_content"
+                        android:text="2.33$" />
+                </LinearLayout>
+            </LinearLayout>
+            <!-- sản phẩm thứ 6 -->
+            <LinearLayout
+                android:id="@+id/linearLayout6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="24dp"
+                android:background="@color/Gray"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imgv6"
+                    android:layout_width="162dp"
+                    android:layout_height="104dp"
+                    app:srcCompat="@drawable/matcha" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="53dp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvTenSanPham6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Matcha Latte"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tvGiaSanPham6"
+                        android:layout_width="64dp"
+                        android:layout_height="wrap_content"
+                        android:text="2.33$" />
+                </LinearLayout>
+            </LinearLayout>
+            <!-- sản phẩm thứ 7 -->
+            <LinearLayout
+                android:id="@+id/linearLayout7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="24dp"
+                android:background="@color/Gray"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imgv7"
+                    android:layout_width="162dp"
+                    android:layout_height="104dp"
+                    app:srcCompat="@drawable/tradao" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="53dp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvTenSanPham7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Peach Tea"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tvGiaSanPham7"
+                        android:layout_width="64dp"
+                        android:layout_height="wrap_content"
+                        android:text="2.33$" />
+                </LinearLayout>
+            </LinearLayout>
+            <!-- sản phẩm thứ 8 -->
+            <LinearLayout
+                android:id="@+id/linearLayout8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="24dp"
+                android:background="@color/Gray"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imgv8"
+                    android:layout_width="162dp"
+                    android:layout_height="104dp"
+                    app:srcCompat="@drawable/travai" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="53dp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvTenSanPham8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Lychee Tea"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tvGiaSanPham8"
+                        android:layout_width="64dp"
+                        android:layout_height="wrap_content"
+                        android:text="2.33$" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <ImageButton
+        android:id="@+id/imgb_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/btn_back" />
+</androidx.constraintlayout.widget.ConstraintLayout>

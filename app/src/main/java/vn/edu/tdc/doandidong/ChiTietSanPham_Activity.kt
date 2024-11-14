@@ -1,5 +1,6 @@
 package vn.edu.tdc.doandidong
 
+import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
 import android.widget.ImageButton
@@ -9,7 +10,7 @@ import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 
 class ChiTietSanPham_Activity : AppCompatActivity() {
-    private lateinit var imgb_Back : ImageButton
+    private lateinit var imgb_Back : ImageView
     private lateinit var imgPic : ImageView
     private lateinit var tvminusCart: TextView
     private lateinit var tvplusCart: TextView
@@ -42,6 +43,7 @@ class ChiTietSanPham_Activity : AppCompatActivity() {
     }
 
     private fun setControl() {
+        imgb_Back = findViewById(R.id.imgb_Back)
         imgPic = findViewById(R.id.imgPic)
         tvminusCart = findViewById(R.id.minusCart)
         tvplusCart = findViewById(R.id.plusCart)
@@ -53,6 +55,7 @@ class ChiTietSanPham_Activity : AppCompatActivity() {
     }
 
     private fun setEvent() {
+
         tvplusCart.setOnClickListener {
             Soluong++
             tvSoLuong.text = Soluong.toString()
@@ -67,6 +70,10 @@ class ChiTietSanPham_Activity : AppCompatActivity() {
 
         btn_AddCart.setOnClickListener {
             Toast.makeText(this, "Đã thêm vào giỏ hàng", Toast.LENGTH_SHORT).show()
+        }
+        imgb_Back.setOnClickListener{
+            val intent = Intent(this , DanhSachSanPham_Activity::class.java)
+            startActivity(intent)
         }
     }
 }

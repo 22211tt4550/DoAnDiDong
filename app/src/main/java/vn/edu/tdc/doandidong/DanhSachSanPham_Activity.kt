@@ -47,36 +47,11 @@ class DanhSachSanPham_Activity : AppCompatActivity() {
 
         // Gán sự kiện click cho từng sản phẩm
         linearLayout1.setOnClickListener {
+
             moChiTietSanPham("Capuchino", "2$", "Capuchino là một loại cà phê Ý được làm từ espresso, sữa nóng và bọt sữa.", R.drawable.caphe)
         }
 
-        linearLayout2.setOnClickListener {
-            moChiTietSanPham("Espresso", "2.33$", "Espresso là loại cà phê được pha chế dưới áp suất cao.", R.drawable.espersso)
-        }
 
-        linearLayout3.setOnClickListener {
-            moChiTietSanPham("Affogato", "3$", "Affogato là một món tráng miệng Ý gồm kem vani và espresso.", R.drawable.affogato)
-        }
-
-        linearLayout4.setOnClickListener {
-            moChiTietSanPham("Americano", "4$", "Americano là cà phê espresso pha loãng với nước nóng.", R.drawable.americano)
-        }
-
-        linearLayout5.setOnClickListener {
-            moChiTietSanPham("Turk", "2$", "Cà phê Thổ Nhĩ Kỳ pha với bột cà phê mịn trong cezve.", R.drawable.turk)
-        }
-
-        linearLayout6.setOnClickListener {
-            moChiTietSanPham("Matcha Latte", "3$", "Matcha Latte là sự kết hợp giữa trà xanh matcha và sữa.", R.drawable.matcha)
-        }
-
-        linearLayout7.setOnClickListener {
-            moChiTietSanPham("Peach Tea", "1,2$", "Trà đào là thức uống thơm ngon và mát lạnh.", R.drawable.tradao)
-        }
-
-        linearLayout8.setOnClickListener {
-            moChiTietSanPham("Lychee Tea", "1.8$", "Trà vải ngọt ngào và mát lạnh.", R.drawable.travai)
-        }
     }
 
     private fun moChiTietSanPham(tenSanPham: String, giaSanPham: String, moTaSanPham: String, hinhAnh: Int) {
